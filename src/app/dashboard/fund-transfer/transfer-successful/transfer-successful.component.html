@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Transfer Status</title>
+    <style>
+        body {
+          margin: 30px;
+        }
+        form {
+          margin: 30px;
+        }
+        /* Style the header */
+        .header {
+          background-color: #f1f1f1;
+          padding: 20px;
+          text-align: center;
+        }
+        input[type=text], select, [type=date], [type=number] {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  resize: vertical;
+		}
+		label {
+		  padding: 12px 12px 12px 0;
+		  display: inline-block;
+		}
+		.col-50 {
+		  float: left;
+		  width: 50%;
+		  margin-top: 6px;
+		}
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		@media screen and (max-width: 600px) {
+		  .col-50, .col-50, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+		  }
+		}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        <h1>Transfer Status</h1>
+    </div>
+    <form action="/action_page.php">
+        <div class="row">
+            <div class="col-50">
+              <label for="refid">Reference ID</label>
+            </div>
+            <div class="col-50">
+                <label for="refid1">459845641</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-50">
+              <label for="mode">Mode</label>
+            </div>
+            <div class="col-50">
+              <input type="text" id="acnumber" placeholder="Enter Benificiary Account Number" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-50">
+              <label for="paidac">Paid to Account</label>
+            </div>
+            <div class="col-50">
+                <label for="paidac">Axis<br>XXXXXXXXXX15</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-50">
+              <label for="amount">Amount</label>
+            </div>
+            <div class="col-50">
+                <label for="amount">Rs. 82514</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-50">
+              <label for="fromac">From Account</label>
+            </div>
+            <div class="col-50">
+                <label for="fromac">XXXXXXXXX123</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-50">
+              <label for="ondate">On</label>
+            </div>
+            <div class="col-50">
+                <label for="ondate">20/11/2022<br>11:35:09 AM</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-50">
+              <label for="remarks">Remarks</label>
+            </div>
+            <div class="col-50">
+                <label for="remarks">School</label>
+            </div>
+        </div>
+    </form>
+  </body>
+</html>
